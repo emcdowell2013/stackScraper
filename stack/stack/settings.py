@@ -67,7 +67,8 @@ ROBOTSTXT_OBEY = True
 #ITEM_PIPELINES = {
 #    'stack.pipelines.StackPipeline': 300,
 #}
-ITEM_PIPELINES = ['stack.pipelines.MongoDBPipeline', ]
+ITEM_PIPELINES = {'stack.pipelines.MongoDBPipeline':300, }
+
 
 MONGODB_SERVER = "localhost"
 MONGODB_PORT = 27017
